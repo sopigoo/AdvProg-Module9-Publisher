@@ -8,3 +8,6 @@ The publisher program sends 5 messages to the message broker in one run. Each me
 
 ### b. What does it mean? guest:guest@localhost:5672 , what is the first guest, and what is the second guest, and what is `localhost:5672` is for?
 The connection string `amqp://guest:guest@localhost:5672` is used to connect to an AMQP-compatible message broker, such as RabbitMQ. In this string, the first `guest` represents the username, and the second `guest` represents the password used for authentication with the broker. The `localhost` part indicates that the broker is running on the same machine where the code is being executed, and `5672` is the default port on which RabbitMQ listens for AMQP connections. This URL allows the program to establish a connection to the message broker so it can send or receive messages through defined queues. In this tutorial, this connection is used by the `CrosstownBus` listener to subscribe to a queue named `user_created` and process incoming messages using a custom handler.
+
+Running RabbitMQ as message broker:
+![running RabbitMQ](/images/RabbitMQ.png)
