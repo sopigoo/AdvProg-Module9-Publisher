@@ -11,3 +11,7 @@ The connection string `amqp://guest:guest@localhost:5672` is used to connect to 
 
 Running RabbitMQ as message broker:
 ![running RabbitMQ](/images/RabbitMQ.png)
+
+Running `cargo run` on the console:
+![console](/images/console.png)
+![activity](/images/activity.png)
